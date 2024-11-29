@@ -1,0 +1,444 @@
+<!--234649G-->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Pancake Menu</title>
+        
+        <link rel="stylesheet" href="css/pancake.css">
+    </head>
+    <body>
+
+    <!-- nav  -->
+    <nav>
+        <a href="../../1.Homepage/home.html"><img class="logo" src="img/takoyaki_logo.jpg" alt="logo"></a>
+        <a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a>
+        <a href="../Order_Page/order.html" class="nav-link">Order</a>
+        <a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a>
+        <a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a>
+        <a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <!-- end of nav -->
+
+    
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-count" class="cart-counter">0 items</div>
+        <form id="cart-form" action="../Order_Page/order.html" method="get">
+            <!-- Cart items will be added here -->
+            <div id="cart-items"></div>
+    
+            <!-- Total Price -->
+            <div id="total-price">Total: $0.00</div>
+    
+            <!-- Checkout Button -->
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+    
+
+      
+    <div class="menu">
+      <div class="heading">
+          <h1>&mdash; Pancake Menu &mdash;</h1>
+      </div>
+  
+    <!-- Food Item 1 -->
+    <div class="food-items">
+        <img src="photo-grid/Peanute-choco.jpg" alt="Peanut and Chocolate pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Peanut and Chocolate pancake</h5>
+                <h5 class="price">$1.70</h5>
+            </div>
+            <p>Peanut and chocolate pancake: A delicious breakfast or dessert dish featuring pancakes infused with the rich flavors of peanut butter and chocolate. The batter typically includes peanut butter, cocoa, and chocolate chips, resulting in a delightful combination of nutty and sweet tastes in each bite.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Peanut and Chocolate pancake">
+                <input type="hidden" name="price" value="$1.70">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 2 -->
+    <div class="food-items">
+        <img src="photo-grid/egg-ham-cheese.jpg" alt="Egg+Ham+Cheese pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Egg+Ham+Cheese pancake</h5>
+                <h5 class="price">$2.50</h5>
+            </div>
+            <p>Egg, ham, and cheese pancake: A savory twist on traditional pancakes, this dish combines fluffy pancakes with scrambled eggs, diced ham, and melted cheese. The result is a hearty and satisfying breakfast option that blends the classic flavors of eggs, ham, and cheese in a convenient pancake form.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Egg+Ham+Cheese pancake">
+                <input type="hidden" name="price" value="$2.50">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+  
+    <!-- Food Item 3 -->
+    <div class="food-items">
+        <img src="photo-grid/floss-egg-ham-cheese.JPG" alt="CK Floss+Egg+Ham+Cheese pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">CK Floss+Egg+Ham+Cheese pancake</h5>
+                <h5 class="price">$3.20</h5>
+            </div>
+            <p>CK Floss (Chicken Floss) + Egg + Ham + Cheese pancake: A savory pancake variation incorporating shredded chicken floss, scrambled eggs, diced ham, and melted cheese. This unique combination offers a delicious fusion of flavors, combining the savory and slightly sweet taste of chicken floss with the classic breakfast elements of egg, ham, and cheese in pancake form.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="CK Floss+Egg+Ham+Cheese pancake">
+                <input type="hidden" name="price" value="$3.20">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 4 -->
+    <div class="food-items">
+        <img src="photo-grid/peanut.jpg" alt="Peanut pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Peanut pancake</h5>
+                <h5 class="price">$1.20</h5>
+            </div>
+            <p>Peanut pancake: A delectable pancake variation infused with the rich and nutty flavor of peanuts. The batter typically includes peanut butter or finely ground peanuts, resulting in a delightful pancake with a distinctive nuttiness. This breakfast or snack option offers a satisfying blend of sweetness and the earthy taste of peanuts.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Peanut pancake">
+                <input type="hidden" name="price" value="$1.20">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Food Item 5 -->
+    <div class="food-items">
+        <img src="photo-grid/red-bean.jpg" alt="Red Bean pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Red Bean pancake</h5>
+                <h5 class="price">$1.20</h5>
+            </div>
+            <p>Red bean pancake: A traditional Asian-inspired pancake featuring a filling made from sweet red bean paste. The pancake batter encases the sweet red bean filling, creating a delightful combination of textures and flavors. This popular dessert or snack offers a mildly sweet and earthy taste, making it a favorite in various East Asian cuisines.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Red Bean pancake">
+                <input type="hidden" name="price" value="$1.20">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 6 -->
+    <div class="food-items">
+        <img src="photo-grid/coconut.jpg" alt="Coconut pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Coconut pancake</h5>
+                <h5 class="price">$1.20</h5>
+            </div>
+            <p>Coconut pancake: A tropical twist on traditional pancakes, where shredded or grated coconut is incorporated into the batter. This variation imparts a subtle coconut flavor and adds a hint of sweetness to the pancakes. Often served with a drizzle of syrup or topped with additional coconut flakes, coconut pancakes offer a delicious and exotic breakfast or brunch option.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Coconut pancake">
+                <input type="hidden" name="price" value="$1.20">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 7 -->
+    <div class="food-items">
+        <img src="photo-grid/taro.jpg" alt="Taro pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Taro pancake</h5>
+                <h5 class="price">$1.30</h5>
+            </div>
+            <p>Taro pancake: A unique pancake variation featuring taro, a starchy root vegetable with a mildly sweet and nutty flavor. Grated or mashed taro is typically added to the pancake batter, creating a distinct taste and a slightly purple hue. Taro pancakes are popular in some Asian cuisines and offer a delightful combination of earthy sweetness and a fluffy texture. They can be enjoyed as a creative and flavorful breakfast or snack.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Taro pancake">
+                <input type="hidden" name="price" value="$1.30">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 8 -->
+    <div class="food-items">
+        <img src="photo-grid/corn.jpeg"  alt="Corn pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Corn pancake</h5>
+                <h5 class="price">$1.40</h5>
+            </div>
+            <p>Corn pancake: A savory pancake variation made by incorporating fresh corn kernels into the batter. The sweet and juicy corn adds a delightful crunch and bursts of flavor to the pancakes. This variation is often seasoned with herbs or spices to complement the natural sweetness of the corn. Corn pancakes are a tasty and versatile option, suitable for breakfast or brunch, and can be enjoyed on their own or with savory toppings.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Corn pancake">
+                <input type="hidden" name="price" value="$1.40">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 9 -->
+    <div class="food-items">
+        <img src="photo-grid/cheese.jpg" alt="Cheese pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Cheese pancake</h5>
+                <h5 class="price">$1.40</h5>
+            </div>
+            <p>Cheese pancake: A savory pancake enriched with cheese, typically grated or melted into the batter. This variation results in a rich and indulgent pancake with a gooey, cheesy interior. The type of cheese used can vary, allowing for different flavor profiles, such as cheddar, mozzarella, or feta. Cheese pancakes are a satisfying choice for those who enjoy a savory twist on the classic pancake, perfect for breakfast or brunch.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Cheese pancake">
+                <input type="hidden" name="price" value="$1.40">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 10 -->
+    <div class="food-items">
+        <img src="photo-grid/nacho-cheese.jpg" alt="Nacho Cheese pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Nacho Cheese pancake</h5>
+                <h5 class="price">$1.40</h5>
+            </div>
+            <p>Nacho Cheese pancake: A savory pancake that incorporates nacho cheese flavor into the batter, giving it a zesty and cheesy taste reminiscent of nacho chips and cheese dip. This creative variation combines the familiar pancake texture with the bold flavors of nacho cheese, offering a unique and indulgent breakfast or brunch option.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Nacho Cheese pancake">
+                <input type="hidden" name="price" value="$1.40">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 11 -->
+    <div class="food-items">
+        <img src="photo-grid/chocolate.jpg" alt="Chocolate pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Chocolate pancake</h5>
+                <h5 class="price">$1.40</h5>
+            </div>
+            <p>Chocolate pancake: A sweet and indulgent pancake variation made with cocoa or chocolate chips in the batter. These pancakes have a rich chocolate flavor, making them a delightful treat for breakfast or dessert. They can be enjoyed on their own, topped with syrup, whipped cream, or fresh fruits for an extra touch of sweetness. Chocolate pancakes are a popular choice for those with a sweet tooth.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Chocolate pancake">
+                <input type="hidden" name="price" value="$1.40">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 12 -->
+    <div class="food-items">
+        <img src="photo-grid/crab-meat.jpg" alt="Crab Meat pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Crab Meat pancake</h5>
+                <h5 class="price">$1.40</h5>
+            </div>
+            <p>Crab meat pancake: A savory pancake variation that incorporates crab meat into the batter, creating a flavorful and seafood-infused dish. The crab meat adds a delicate sweetness and unique taste to the pancakes. Often seasoned with herbs and spices, crab meat pancakes are a delicious choice for those who enjoy seafood and are looking for a distinctive twist on traditional pancakes. They can be served with a complementary sauce or enjoyed as part of a savory brunch.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Crab Meat pancake">
+                <input type="hidden" name="price" value="$1.40">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 13 -->
+    <div class="food-items">
+        <img src="photo-grid/egg.jpg" alt="Egg pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Egg pancake</h5>
+                <h5 class="price">$1.50</h5>
+            </div>
+            <p>Egg pancake: A simple and classic pancake variation primarily made with eggs. The batter typically includes eggs, flour, and a liquid (such as milk or water), resulting in a thin and light pancake with a predominantly eggy flavor. These pancakes can be enjoyed on their own or with a variety of toppings, such as syrup, fruit, or whipped cream. Egg pancakes are a quick and versatile option for breakfast or a light meal.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Egg pancake">
+                <input type="hidden" name="price" value="$1.50">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 14 -->
+    <div class="food-items">
+        <img src="photo-grid/raisin.jpg" alt="Raisin pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Raisin pancake</h5>
+                <h5 class="price">$1.50</h5>
+            </div>
+            <p>Raisin pancake: A sweet pancake variation featuring plump raisins mixed into the batter. The raisins add a natural sweetness and chewy texture to the pancakes. Often flavored with a hint of cinnamon or vanilla, raisin pancakes offer a comforting and slightly fruity taste. They can be enjoyed as a stand-alone treat or paired with maple syrup, honey, or powdered sugar for added sweetness. Raisin pancakes are a classic choice for a cozy and satisfying breakfast.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Raisin pancake">
+                <input type="hidden" name="price" value="$1.50">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 15 -->
+    <div class="food-items">
+        <img src="photo-grid/chicken-ham.jpg" alt="Chicken Ham pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Chicken Ham pancake</h5>
+                <h5 class="price">$1.60</h5>
+            </div>
+            <p>Chicken ham pancake: A savory pancake variation that includes diced or shredded chicken ham in the batter. This combination offers a blend of the mild flavor of chicken and the smokiness of ham within a pancake. Often seasoned with herbs and spices, chicken ham pancakes provide a savory and satisfying option for breakfast or brunch. They can be enjoyed as is or paired with complementary sauces or toppings to enhance the overall flavor profile.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Chicken Ham pancake">
+                <input type="hidden" name="price" value="$1.60">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 16 -->
+    <div class="food-items">
+        <img src="photo-grid/smoked-chicken.jpg" alt="Smoked Chicken pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Smoked Chicken pancake</h5>
+                <h5 class="price">$1.60</h5>
+            </div>
+            <p>Smoked chicken pancake: A savory pancake variation featuring the rich and smoky flavor of smoked chicken. The pancake batter is infused with shredded or diced smoked chicken, imparting a distinctive smokiness to the dish. Typically seasoned with complementary herbs and spices, smoked chicken pancakes offer a unique twist on traditional savory pancakes. They make for a flavorful and satisfying option, suitable for breakfast or brunch.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Smoked Chicken pancake">
+                <input type="hidden" name="price" value="$1.60">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 17 -->
+    <div class="food-items">
+        <img src="photo-grid/chicken-floss.jpg" alt="Chicken Floss pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Chicken Floss pancake</h5>
+                <h5 class="price">$1.70</h5>
+            </div>
+            <p>Chicken floss pancake: A unique and flavorful pancake variation that incorporates chicken floss into the batter. Chicken floss, which is finely shredded and seasoned dried chicken, adds a savory and slightly sweet taste to the pancakes. This creative combination results in a pancake with a distinctive texture and a burst of umami flavor. Chicken floss pancakes are a popular choice in some Asian cuisines, offering a delicious fusion of sweet and savory elements.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Chicken Floss pancake">
+                <input type="hidden" name="price" value="$1.70">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 18 -->
+    <div class="food-items">
+        <img src="photo-grid/butter-sugar.jpg" alt="Butter Sugar pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Butter Sugar pancake</h5>
+                <h5 class="price">$1.10</h5>
+            </div>
+            <p>Butter sugar pancake: A simple and classic pancake variation where the pancakes are cooked with generous amounts of butter and sprinkled with sugar. The butter adds richness and a luscious flavor, while the sugar provides sweetness. This straightforward combination creates a deliciously indulgent pancake that can be enjoyed for breakfast or as a sweet treat. The butter sugar pancake is often served with additional toppings like syrup or whipped cream for added sweetness and decadence.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Butter Sugar pancake">
+                <input type="hidden" name="price" value="$1.10">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Food Item 19 -->
+    <div class="food-items">
+        <img src="photo-grid/plain.jpg" alt="Plain pancake">
+        <div class="details">
+            <div class="details-sub">
+                <h5 class="food-name">Plain pancake</h5>
+                <h5 class="price">$1.00</h5>
+            </div>
+            <p>Plain pancake: A basic and classic pancake made with simple ingredients such as flour, eggs, milk (or a substitute), and a leavening agent. These pancakes are versatile and can be enjoyed in their simplicity or customized with various toppings like syrup, butter, fruit, or whipped cream. Plain pancakes serve as a blank canvas, making them a popular choice for those who prefer a traditional and straightforward breakfast option.</p>
+           
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                <input type="hidden" name="foodName" value="Plain pancake">
+                <input type="hidden" name="price" value="$1.00">
+                <button type="submit">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+  
+  </div>
+  
+
+
+
+
+ <!-- footer -->
+ <footer>
+    <div class="column">
+      <h2>Link Details</h2>
+      <ul>
+        <li><a href="../../1.Homepage/home.html" class="nav-link">Home</a></li>
+        <li><a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a></li>
+        <li><a href="../Order_Page/order.html" class="nav-link">Order</a></li>
+        <li><a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a></li>
+        <li><a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a></li>
+        <li><a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <form class="form contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">          
+        </div>
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+      <p class="cr">&copy; 2023 Pancake Takoyaki Stall. All rights reserved.</p>
+    </div>
+
+    <div class="column">
+      <h2>Contact Us</h2>
+      <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.37995,103.848949,16z/data=!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?hl=en&entry=ttu" class="info"><p>Nanyang Polytechnic,</p><p>180 Ang Mo Kio Ave 8,</p>Singapore 569830</a>
+      <a href="https://www.facebook.com/Joyfulsup">
+        <img class="facebooklogo" src="img/facebook.jpg" title="facebook" alt="facebook">
+      </a>
+      <a href="../../1.Homepage/home.html">
+        <img class="logo" src="img/takoyaki_logo.jpg" alt="logo">
+      </a>
+    </div>
+  </footer>
+  <!-- end of footer -->
+    
+  </body>
+</html>

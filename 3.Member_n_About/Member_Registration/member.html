@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+
+    <!-- nav  -->
+    <nav>
+        <a href="../../1.Homepage/home.html"><img class="logo" src="img/takoyaki_logo.jpg" alt="logo"></a>
+        <a href="../../2.Menu_n_Order/Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a>
+        <a href="../../2.Menu_n_Order/Order_Page/order.html" class="nav-link">Order</a>
+        <a href="../About_Us/about.html" class="nav-link">About Us</a>
+        <a href="../Member_Registration/member.html" class="nav-link">Sign Up</a>
+        <a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <!-- end of nav -->
+
+  <!-- main content -->
+  <main>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="password2" id="password2" required>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <div class="btn">
+            <button type="submit">Sign Up</button>
+          </div>
+          <p class="Login"><a href="Login.html">Already a member? <b>Log in</b></a></p>
+          <p class="bottom-text">
+            <p>By clicking the Sign in button, you agree to our</p>
+            <p>
+              <a href="https://jkorpela.fi/cgi-bin/echo.cgi"><b>Terms & Conditions</b></a> and
+              <a href="https://jkorpela.fi/cgi-bin/echo.cgi"><b>Privacy Policy</b></a>
+            </p>
+          
+        </form>
+      </div>   
+    </div>
+  </main>
+    
+   
+    <!-- footer -->
+    <footer>
+      <div class="column">
+        <h2>Link Details</h2>
+        <ul>
+          <li><a href="../../1.Homepage/home.html" class="nav-link">Home</a></li>
+          <li><a href="../../2.Menu_n_Order/Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a></li>
+          <li><a href="../../2.Menu_n_Order/Order_Page/order.html" class="nav-link">Order</a></li>
+          <li><a href="../About_Us/about.html" class="nav-link">About Us</a></li>
+          <li><a href="../Member_Registration/member.html" class="nav-link">Sign Up</a></li>
+          <li><a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <form class="form contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <div class="form-row">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+          <div class="form-row">
+            <label for="email">Your Email</label>
+            <input type="text" name="email" id="email-contact" placeholder="Email">
+          </div>
+          <br>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+          </div>
+          <button type="submit">
+            Submit
+          </button>
+        </form>
+        <p class="cr">&copy; 2023 Pancake Takoyaki Stall. All rights reserved.</p>
+      </div>
+
+      <div class="column">
+        <h2>Contact Us</h2>
+        <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.37995,103.848949,16z/data=!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?hl=en&entry=ttu" class="info">
+          <p>Nanyang Polytechnic,</p>
+          <p>180 Ang Mo Kio Ave 8,</p>
+          <p>Singapore 569830</p>
+        </a>
+        <a href="https://www.facebook.com/Joyfulsup">
+          <img class="facebooklogo" src="img/facebook.jpg" title="facebook" alt="facebook">
+        </a>
+        <a href="../../1.Homepage/home.html">
+          <img class="logo" src="img/takoyaki_logo.jpg" alt="logo">
+        </a>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    
+</body>
+</html>

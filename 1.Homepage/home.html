@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body>
+
+    <!-- nav  -->
+    <nav>
+        <a href="home.html"><img class="logo" src="img/takoyaki_logo.jpg" alt="logo"></a>
+        <a href="../2.Menu_n_Order/Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a>
+        <a href="../2.Menu_n_Order/Order_Page/order.html" class="nav-link">Order</a>
+        <a href="../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a>
+        <a href="../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a>
+        <a href="../4.Contact_Us/contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <!-- end of nav -->
+
+    <!-- popup -->
+    <input type="checkbox" id="popupCheckbox" checked>
+    <div class="popup">
+      <label for="popupCheckbox" class="closePopupBtn">
+        <img src="img/bx-x-circle.svg" alt="Close Popup">
+      </label>
+      <div class="coupon"> 
+        <div class="logo"> 
+          <img src="img/takoyaki_logo.jpg" alt="Store Logo"> 
+        </div> 
+        <h2>TakoJoy Special Offer!</h2> 
+        <p> 
+            Get <span class="code">30%</span>  
+            off your purchase! 
+        </p> 
+          
+        <p> 
+            Login and use code to  
+            enjoy the discount. 
+        </p> 
+          
+        <p>Expires: <span class="expiration"> 
+            8 September 2024</span> 
+        </p> 
+      </div>
+      <div class="promotion">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <div>
+              <label for="Code">Code:</label> <!-- Added for attribute -->
+              <input type="text" name="Code" placeholder="Enter Promo Code" id="Code" required>
+          </div>
+          <div class="midbutt">
+          <button type="submit">ENTER</button>
+          <button type="reset">CLEAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end of popup -->
+
+
+    <!-- main -->
+    <main class="page">
+
+      <!-- header -->
+      <header class="banner">
+        <div class="banner-container">
+          <div class="banner-text">
+            <h1 class="animated-text">TakoJoy</h1>
+            <h4 class="animated-text">since 2008</h4>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- animated text-->
+      <div class="center">
+        <h2 class="animated-text">Must-Try Masterpieces:</h2>
+      </div>
+      <!-- end of animated text-->
+
+      <!-- whole container -->
+      <section class="whole-container">
+
+        <!-- sidebar -->
+        <div class="sidebar-container">
+          <h4>Menu</h4>
+          <div class="sidebar">
+            <a href="../2.Menu_n_Order/Pancake_Sidebar/pancake.html">Pancakes (1)</a>
+            <a href="../2.Menu_n_Order/Takoyaki_Sidebar/takoyaki.html">Takoyaki (2)</a>
+          </div>
+        </div>
+        <!-- end of sidebar-->
+
+        <!-- grid -->
+        <div class="photo-grid">
+          <!-- 1st grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/peanut-choco.jpg"
+            class="img grid-img" alt="A delicious peanut chocolate pancake">
+            <h5>Peanut & Chocolate</h5>
+            <p>A divine blend of creamy chocolate and roasted peanuts.</p>
+          </a>
+          <!-- end of 1st grid -->
+
+          <!-- 2nd grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/egg-ham-cheese.jpg"
+            class="img grid-img" alt="A delicious egg ham cheese pancake">
+            <h5>Egg ham & Cheese</h5>
+            <p>Fluffy omelet, savory ham and melted cheese perfection.</p>
+          </a>
+          <!-- end of 2nd grid -->
+
+          <!-- 3rd grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/floss-egg-ham-cheese.JPG"
+            class="img grid-img" alt="A delicious chicken floss egg ham cheese pancake">
+            <h5>CK floss egg + ham + cheese</h5>
+            <p>Crispy chicken floss meets egg, ham and gooey cheese.</p>
+          </a>
+          <!-- end of 3rd grid -->
+
+          <!-- 4th grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/taro.jpg"
+            class="img grid-img" alt="A delicious plate of taro pancake">
+            <h5>Taro</h5>
+            <p>Taro pancake is a delicious dish made with taro root.</p>
+          </a>
+          <!-- end of 4th grid -->
+
+          <!-- 5th grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/nacho_cheese.jpg"
+            class="img grid-img" alt="A delicious plate of nacho cheese pancake">
+            <h5>Nacho cheese</h5>
+            <p>Nacho cheese pancake is a unique twist on traditional pancakes.</p>
+          </a>
+          <!-- end of 5th grid -->
+
+          <!-- 6th grid -->
+          <a href="../2.Menu_n_Order/Order_Page/order.html" class="grid">
+            <img src="photo-grid/takoyaki.jpg"
+            class="img grid-img" alt="A delicious plate of takoyaki">
+            <h5>Takoyaki</h5>
+            <p>Golden balls with octopus, prawn, chicken ham and crab meat.</p>
+          </a>
+          <!-- end of 6th grid -->
+
+        </div>
+        <!-- end of grid -->
+
+      </section>
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer>
+      <div class="column">
+        <h2>Link Details</h2>
+        <ul>
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="../2.Menu_n_Order/Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a></li>
+          <li><a href="../2.Menu_n_Order/Order_Page/order.html" class="nav-link">Order</a></li>
+          <li><a href="../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a></li>
+          <li><a href="../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a></li>
+          <li><a href="../4.Contact_Us/contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <form class="form contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+          <div class="form-row">
+            <label for="name">Your Name:</label> <!-- Added for attribute -->
+            <input type="text" name="name" id="name" placeholder="Name" required>          
+          </div>
+          <div class="form-row">
+            <label for="email">Your Email:</label> <!-- Added for attribute -->
+            <input type="text" name="email" id="email" placeholder="Email" required>
+          </div>
+          <br>
+          <div class="form-row">
+            <label for="message">Message:</label> <!-- Added for attribute -->
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="5" required></textarea>
+          </div>
+          <button type="submit">
+            Submit
+          </button>
+        </form>
+        <p class="cr">&copy; 2023 Pancake Takoyaki Stall. All rights reserved.</p>
+      </div>
+
+      <div class="column">
+        <h2>Contact Us</h2>
+        <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.37995,103.848949,16z/data=!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?hl=en&entry=ttu" class="info"><p>Nanyang Polytechnic,</p><p>180 Ang Mo Kio Ave 8,</p>Singapore 569830</a>
+    
+        <a href="https://www.facebook.com/Joyfulsup">
+          <img class="facebooklogo" src="img/facebook.jpg" title="facebook" alt="facebook">
+        </a>
+        <a href="home.html">
+          <img class="logo" src="img/takoyaki_logo.jpg" alt="logo">
+        </a>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>

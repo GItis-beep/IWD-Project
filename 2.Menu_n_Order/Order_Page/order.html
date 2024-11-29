@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+
+    <!-- nav  -->
+    <nav>
+        <a href="../../1.Homepage/home.html"><img class="logo" src="img/takoyaki_logo.jpg" alt="logo"></a>
+        <a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a>
+        <a href="../Order_Page/order.html" class="nav-link">Order</a>
+        <a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a>
+        <a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a>
+        <a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <!-- end of nav -->
+
+  <!-- main content -->
+  <main>
+    <!-- Delivery Form Section -->
+    <div class="contact-form">
+        <h1>Delivery Page</h1>
+        <form class="form delivery-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea name="address" id="address" placeholder="Enter your delivery address" rows="3" required></textarea>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="order">Special Instructions To The Delivery Driver</label>
+            <textarea name="order" id="order" placeholder="(Optional)" rows="5" required></textarea>
+
+            <button class="PO" type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-container">
+        <iframe id="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.942991586806!2d103.84894870000002!3d1.3799500000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16eb64b0249d%3A0xe5f10ff680eed942!2sNanyang%20Polytechnic!5e0!3m2!1sen!2ssg!4v1642153292347!5m2!1sen!2ssg" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+  <!-- end of main content -->
+
+   
+ <!-- footer -->
+ <footer>
+    <div class="column">
+      <h2>Link Details</h2>
+      <ul>
+        <li><a href="../../1.Homepage/home.html" class="nav-link">Home</a></li>
+        <li><a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a></li>
+        <li><a href="../Order_Page/order.html" class="nav-link">Order</a></li>
+        <li><a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a></li>
+        <li><a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a></li>
+        <li><a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <form class="form contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="footer-name" placeholder="Name">          </div>
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+      <p class="cr">&copy; 2023 Pancake Takoyaki Stall. All rights reserved.</p>
+    </div>
+
+    <div class="column">
+      <h2>Contact Us</h2>
+      <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.37995,103.848949,16z/data=!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?hl=en&entry=ttu" class="info"><p>Nanyang Polytechnic,</p><p>180 Ang Mo Kio Ave 8,</p>Singapore 569830</a>
+      <a href="https://www.facebook.com/Joyfulsup">
+        <img class="facebooklogo" src="img/facebook.jpg" title="facebook" alt="facebook">
+      </a>
+      <a href="../../1.Homepage/home.html">
+        <img class="logo" src="img/takoyaki_logo.jpg" alt="logo">
+      </a>
+    </div>
+  </footer>
+  <!-- end of footer -->
+    
+</body>
+</html>

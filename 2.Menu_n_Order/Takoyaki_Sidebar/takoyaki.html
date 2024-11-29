@@ -1,0 +1,190 @@
+<!--234649G-->
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Takoyaki Menu</title>
+        
+        <link rel="stylesheet" href="css/takoyaki.css">
+    </head>
+    <body>
+
+    <!-- nav  -->
+    <nav>
+        <a href="../../1.Homepage/home.html"><img class="logo" src="img/takoyaki_logo.jpg" alt="logo"></a>
+        <a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a>
+        <a href="../Order_Page/order.html" class="nav-link">Order</a>
+        <a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a>
+        <a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a>
+        <a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <!-- end of nav -->
+
+
+
+    <!-- popup -->
+    <input type="checkbox" id="popupCheckbox" checked>
+    <div class="popup">
+        <label for="popupCheckbox" class="closePopupBtn">
+            <img src="img/bx-x-circle.svg" alt="Close Popup">
+        </label>
+        <div class="promotion">
+            <h2>&lceil; Mix & Match &rceil;</h2>
+            <table>
+                <tr>
+                    <td>$2 for 2</td>
+                    <td>$2.70 for 4</td>
+                    <td>$3.40 for 5</td>
+                </tr>
+                <tr>
+                    <td>$4 for 6</td>
+                    <td>$5.40 for 8</td>
+                    <td>$6.70 for 10</td>
+                </tr>
+                <tr>
+                    <td>$8 for 12</td>
+                    <td colspan="2">$10 for 15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- end of popup -->
+
+
+    
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <div id="cart-count" class="cart-counter">0 items</div>
+      <form id="cart-form" action="../Order_Page/order.html" method="get">
+          <!-- Cart items will be added here -->
+          <div id="cart-items"></div>
+  
+          <!-- Total Price -->
+          <div id="total-price">Total: $0.00</div>
+  
+          <!-- Checkout Button -->
+          <button type="submit">Checkout</button>
+      </form>
+  </div>
+  
+
+      
+    <div class="menu">
+      <div class="heading">
+          <h1>&mdash; Takoyaki Menu &mdash;</h1>
+      </div>
+  
+    <!-- Food Item 1: Octopus Takoyaki -->
+    <div class="food-items">
+      <img src="photo-grid/Octo.jpg" alt="Octopus Takoyaki">
+      <div class="details">
+          <div class="details-sub">
+              <h5>Octopus Takoyaki</h5>
+          </div>
+          <p>Octopus Takoyaki is a popular Japanese street food and snack. These bite-sized savory balls are made with a batter containing flour, eggs, and dashi (Japanese soup stock). Diced octopus is a key ingredient, giving the dish its name. The batter is poured into round molds, and a piece of octopus is placed in the center. Once cooked, the takoyaki is typically brushed with a special takoyaki sauce, mayonnaise, bonito flakes, and seaweed flakes, creating a flavorful and enjoyable treat.</p>
+
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+              <input type="hidden" name="foodName" value="Octopus Takoyaki">
+              <button type="submit">Add To Cart</button>
+          </form>
+      </div>
+    </div>
+
+    <!-- Food Item 2: Prawn Takoyaki -->
+    <div class="food-items">
+      <img src="photo-grid/prawn.jpg" alt="Prawn Takoyaki">
+      <div class="details">
+          <div class="details-sub">
+              <h5>Prawn Takoyaki</h5>
+          </div>
+          <p>Prawn Takoyaki is a variation of the traditional Japanese street food, Takoyaki, where diced prawns are used instead of octopus. Similar to the classic version, Prawn Takoyaki involves a batter made from flour, eggs, and dashi (Japanese soup stock). The batter is poured into round molds, and a piece of prawn is placed in the center. Once cooked, the Prawn Takoyaki is often drizzled with takoyaki sauce, mayonnaise, and topped with bonito flakes and seaweed flakes, resulting in a delicious and seafood-infused snack.</p>
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+              <input type="hidden" name="foodName" value="Prawn Takoyaki">
+              <button type="submit">Add To Cart</button>
+          </form>
+      </div>
+    </div>
+
+    <!-- Food Item 3: Chicken Ham Takoyaki -->
+    <div class="food-items">
+      <img src="photo-grid/ham.jpg" alt="Chicken Ham Takoyaki">
+      <div class="details">
+          <div class="details-sub">
+              <h5>Chicken Ham Takoyaki</h5>
+          </div>
+          <p>Chicken Ham Takoyaki is a unique twist on the traditional Japanese snack, Takoyaki. In this variation, instead of octopus or prawns, diced chicken ham is used as the main protein ingredient. The preparation involves making a batter with flour, eggs, and dashi (Japanese soup stock), and then pouring it into round molds. Each mold contains a piece of chicken ham in the center. Once cooked, the Chicken Ham Takoyaki is typically served with takoyaki sauce, mayonnaise, and garnished with bonito flakes and seaweed flakes, offering a flavorful blend of chicken and savory elements in the bite-sized, ball-shaped snack.</p>
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+              <input type="hidden" name="foodName" value="Chicken Ham Takoyaki">
+              <button type="submit">Add To Cart</button>
+          </form>
+      </div>
+    </div>
+
+    <!-- Food Item 4: Crab Meat Takoyaki -->
+    <div class="food-items">
+      <img src="photo-grid/crab.jpg" alt="Crab Meat Takoyaki">
+      <div class="details">
+          <div class="details-sub">
+              <h5>Crab Meat Takoyaki</h5>
+          </div>
+          <p>Crab Meat Takoyaki is a delicious variation of the traditional Japanese street food, Takoyaki. In this version, diced crab meat is used as the primary seafood ingredient. Similar to classic Takoyaki, the dish involves making a batter with flour, eggs, and dashi (Japanese soup stock). The batter is poured into round molds, with a piece of crab meat placed in the center of each. Once cooked, the Crab Meat Takoyaki is typically drizzled with takoyaki sauce, mayonnaise, and topped with bonito flakes and seaweed flakes, resulting in a flavorful and savory snack with the distinctive taste of crab.</p>
+          <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+              <input type="hidden" name="foodName" value="Crab Meat Takoyaki">
+              <button type="submit">Add To Cart</button>
+          </form>
+      </div>
+    </div>
+  
+</div>
+
+  <!-- footer -->
+  <footer>
+    <div class="column">
+      <h2>Link Details</h2>
+      <ul>
+        <li><a href="../../1.Homepage/home.html" class="nav-link">Home</a></li>
+        <li><a href="../Food_Menu_Pick/pick.html" class="nav-link">Food Menu</a></li>
+        <li><a href="../Order_Page/order.html" class="nav-link">Order</a></li>
+        <li><a href="../../3.Member_n_About/About_Us/about.html" class="nav-link">About Us</a></li>
+        <li><a href="../../3.Member_n_About/Member_Registration/member.html" class="nav-link">Sign Up</a></li>
+        <li><a href="../../4.Contact_Us/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <form class="form contact-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">          
+        </div>
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input type="text" name="email" id="email" placeholder="Email">
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+      <p class="cr">&copy; 2023 Pancake Takoyaki Stall. All rights reserved.</p>
+    </div>
+
+    <div class="column">
+      <h2>Contact Us</h2>
+      <a href="https://www.google.com/maps/place/Nanyang+Polytechnic/@1.37995,103.848949,16z/data=!4m6!3m5!1s0x31da16eb64b0249d:0xe5f10ff680eed942!8m2!3d1.37995!4d103.8489487!16zL20vMDN4Njkz?hl=en&entry=ttu" class="info"><p>Nanyang Polytechnic,</p><p>180 Ang Mo Kio Ave 8,</p>Singapore 569830</a>
+      <a href="https://www.facebook.com/Joyfulsup">
+        <img class="facebooklogo" src="img/facebook.jpg" title="facebook" alt="facebook">
+      </a>
+      <a href="../../1.Homepage/home.html">
+        <img class="logo" src="img/takoyaki_logo.jpg" alt="logo">
+      </a>
+    </div>
+  </footer>
+  <!-- end of footer -->
+    
+  </body>
+</html>
